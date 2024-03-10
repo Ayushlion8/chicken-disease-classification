@@ -1,7 +1,7 @@
 tensorflow
-pandas 
-dvc
-notebook
+pandas  # 
+dvc     # 
+notebook #  for jupyter notebooks
 numpy
 matplotlib
 seaborn
@@ -13,5 +13,9 @@ joblib
 types-PyYAML
 scipy
 Flask
-Flask-Cors
--e .
+Flask-Cors # for allowing cross domain requests from any origin (for development)
+
+-e .       # For local development, running python setup.py install is not always necessary. When you use -e . in the requirements.txt file, it installs your local project in editable mode, making changes to the code immediately reflected without needing to reinstall !
+
+
+# In summary, requirements.txt is primarily for managing external dependencies, while setup.py is more related to packaging, distribution, and metadata. During local development, running pip install -r requirements.txt is often sufficient, and you may not need to run python setup.py install
